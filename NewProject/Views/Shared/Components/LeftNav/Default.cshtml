@@ -1,0 +1,101 @@
+﻿@*@model AllClass*@
+
+
+@* 尝试过用一个类包含所有的模型，然后每个页面都引用这个类，实施难度太大，暂时放弃 *@
+
+@*不要用razor页面（@page)*@
+@* 用了razor页面，访问不到model,各种毛病， *@
+@*@{ 
+    //var power = Model.power;
+    var model = Model;
+    var power = model.power;
+}*@
+@*
+      _Layout 不能使用@page（与@renderbody冲突），所以不能用session， 所以使用视图组件
+    这个页面是左侧的导航栏，要根据用户的菜单权限动态显示该用户的菜单栏
+*@
+<nav id="left-navbar" class="left-navbar">
+    <div class="left-navbar-containter">
+        @*头像*@
+        <div class="user-div">
+            @*<img class="user-img" src="~/images/photo.png" alt="UserInfo" />"*@
+            <button class="dropdown-toggle menu-btn" data-toggle="dropdown">
+                @*<i class="fa fa-align-justify"></i>*@
+                <img class="user-img" src="~/images/photo.png" alt="UserInfo" />"
+            </button>
+            <div id="menu" class="dropdown-menu dropdown-menu-right">
+                <ul>
+                    <li>
+                        <span>
+                            @TempData["userName"]
+                            @*@Html.DisplayFor(m => m.user.user_name)*@
+                            @*@Model.user.user_name*@
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        @*菜单*@
+        <div class="left-menu-div">
+            <button class="dropdown-toggle menu-btn" data-toggle="dropdown">
+                <i class="fa fa-align-justify"></i>
+            </button>
+            <div id="menu" class="dropdown-menu dropdown-menu-right">
+                <ul>
+                     @if (TempData["tymk"].ToString() == "1")
+                     {
+                         <li><span id="left-tymk">通用名库</span></li>
+                     }
+                     @if (TempData["yygl"].ToString() == "1")
+                     {
+                         <li><span id="left-yhgl">用户管理</span></li>
+                     }
+                     @if (TempData["qxzgl"].ToString() == "1")
+                     {
+                         <li><span id="left-qxzgl">权限组管理</span></li>
+                     }
+                     @if (TempData["cdgl"].ToString() == "1")
+                     {
+                         <li><span id="left-cdgl">菜单管理</span></li>
+                     }
+                     @if (TempData["qxcd"].ToString() == "1")
+                     {
+                         <li><span id="left-qxcd">权限菜单管理</span></li>
+                     }
+                     @*@if (Model.power.tymk == "1")
+                     {
+                     <li><a asp-area="" asp-controller="medicines" asp-action="index">通用名库</a></li>
+                     }
+                     @if (Model.power.yygl == "1")
+                     {
+                         <li><a asp-area="" asp-controller="users" asp-action="index">用户管理</a></li>
+                     }
+                     @if (Model.power.qxzgl == "1")
+                     {
+                         <li><span>权限组管理</span></li>
+                     }
+                     @if (Model.power.cdgl == "1")
+                     {
+                         <li><span>菜单管理</span></li>
+                     }
+                     @if (Model.power.qxcd == "1")
+                     {
+                         <li><span>权限菜单管理</span></li>
+                     }*@
+                </ul>
+            </div>
+        </div>
+        @*底部菜单*@
+        <div class="left-bottom-menu">
+            <button class="left-bottom-btn dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-ellipsis-h"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <ul>
+                    <li><span data-toggle="modal" data-target="#xgPwd">修改密码</span></li>
+                    <li><a asp-action="Logout">注销</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

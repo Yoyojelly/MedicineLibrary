@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/login.css" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+@*<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>*@
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <div class="row login-row">
+        <div class="login-div col-sm-3 col-md-3 offset-sm-7 offset-md-7">
+            <div class="title-div col-md-12">
+                @*标题*@
+                <h2 class="login-title">账号登陆</h2>
+            </div>
+            @*下拉菜单*@
+            <div class="col-sm-12 col-md-12 login-item">
+                <div class="dropdown">
+                    <button id="my-menu" type="button" class="btn btn-primary dropdown-toggle menu-btn" data-toggle="dropdown">
+                        药品库
+                    </button>
+                    <div class="dropdown-menu">
+                        <div id="dropdown-menu-1" class="dropdown-item">药品库</div>
+                        <div id="dropdown-menu-2" class="dropdown-item">测试账套</div>
+                    </div>
+                </div>
+            </div>
+            <form asp-action="Index">
+                @*账号输入框*@
+                <div class="col-md-12 login-item">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-drivers-license-o"></i>
+                            </span>
+                        </div>
+                        <input name="userName" class="form-control" />
+                    </div>
+                </div>
+                @*密码输入框*@
+                <div class="col-md-12 login-item">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                        </div>
+                        <input name="userPwd" type="password" class="form-control" />
+                    </div>
+                </div>
+                @*登陆按钮*@
+                <div class="col-md-12 login-item">
+                    <input type="submit" value="登陆" class="btn btn-default form-control" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/login.js"></script>

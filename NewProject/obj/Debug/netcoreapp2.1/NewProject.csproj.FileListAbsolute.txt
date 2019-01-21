@@ -1,0 +1,276 @@
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.csproj.CoreCompileInputs.cache
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorAssemblyInfo.cache
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorAssemblyInfo.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.AssemblyInfoInputs.cache
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.AssemblyInfo.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.TagHelpers.input.cache
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.TagHelpers.output.cache
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorCoreGenerate.cache
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\LeftNav\Default.g.cshtml.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\TopNav\Default.g.cshtml.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorTargetAssemblyInfo.cache
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorTargetAssemblyInfo.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.dll
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.pdb
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.deps.json
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.runtimeconfig.json
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.runtimeconfig.dev.json
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.dll
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.pdb
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.Views.dll
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.Views.pdb
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.Views.pdb
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.csproj.CopyComplete
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\View.g.cshtml.cs
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\810a1b930979de83478be0f458b51dd8.png
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\912ec66d7572ff821749319396470bde.svg
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\9c74e172f87984c48ddf5c8108cabe67.png
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\build.js
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\index.html
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\styles.css
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\674f50d287a8c48dc19ba404d20fe713.eot
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\af7ae505a9eed503f8b8e6982036873e.woff2
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\b06871f281fee6b241d60582ae9369b9.ttf
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\fee66e712a8a08eef5805a46892932ad.woff
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\76ec2a09aa20e8a01442f48f046c1a57.png
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\912ec66d7572ff821749319396470bde.svg
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\9c74e172f87984c48ddf5c8108cabe67.png
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\build.js
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\index.html
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\styles.css
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\674f50d287a8c48dc19ba404d20fe713.eot
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\af7ae505a9eed503f8b8e6982036873e.woff2
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\b06871f281fee6b241d60582ae9369b9.ttf
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\fee66e712a8a08eef5805a46892932ad.woff
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\dist\backend.js
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\dist\devtools.js
+D:\Project\MyProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\index.html
+D:\Project\MyProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.csprojAssemblyReference.cache
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\810a1b930979de83478be0f458b51dd8.png
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\912ec66d7572ff821749319396470bde.svg
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\9c74e172f87984c48ddf5c8108cabe67.png
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\build.js
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\index.html
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\styles.css
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\674f50d287a8c48dc19ba404d20fe713.eot
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\af7ae505a9eed503f8b8e6982036873e.woff2
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\b06871f281fee6b241d60582ae9369b9.ttf
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\fee66e712a8a08eef5805a46892932ad.woff
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\76ec2a09aa20e8a01442f48f046c1a57.png
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\912ec66d7572ff821749319396470bde.svg
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\9c74e172f87984c48ddf5c8108cabe67.png
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\build.js
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\index.html
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\styles.css
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\674f50d287a8c48dc19ba404d20fe713.eot
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\af7ae505a9eed503f8b8e6982036873e.woff2
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\b06871f281fee6b241d60582ae9369b9.ttf
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\fee66e712a8a08eef5805a46892932ad.woff
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\dist\backend.js
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\dist\devtools.js
+D:\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\index.html
+D:\NewProject\bin\Debug\netcoreapp2.1\NewProject.deps.json
+D:\NewProject\bin\Debug\netcoreapp2.1\NewProject.runtimeconfig.json
+D:\NewProject\bin\Debug\netcoreapp2.1\NewProject.runtimeconfig.dev.json
+D:\NewProject\bin\Debug\netcoreapp2.1\NewProject.dll
+D:\NewProject\bin\Debug\netcoreapp2.1\NewProject.pdb
+D:\NewProject\bin\Debug\netcoreapp2.1\NewProject.Views.dll
+D:\NewProject\bin\Debug\netcoreapp2.1\NewProject.Views.pdb
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.csprojAssemblyReference.cache
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.csproj.CoreCompileInputs.cache
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorAssemblyInfo.cache
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorAssemblyInfo.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.AssemblyInfoInputs.cache
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.AssemblyInfo.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.TagHelpers.input.cache
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.TagHelpers.output.cache
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorCoreGenerate.cache
+D:\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\LeftNav\Default.g.cshtml.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\TopNav\Default.g.cshtml.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\View.g.cshtml.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorTargetAssemblyInfo.cache
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorTargetAssemblyInfo.cs
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.Views.pdb
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.dll
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.pdb
+D:\NewProject\obj\Debug\netcoreapp2.1\NewProject.csproj.CopyComplete
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\810a1b930979de83478be0f458b51dd8.png
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\912ec66d7572ff821749319396470bde.svg
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\9c74e172f87984c48ddf5c8108cabe67.png
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\build.js
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\index.html
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\styles.css
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\674f50d287a8c48dc19ba404d20fe713.eot
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\af7ae505a9eed503f8b8e6982036873e.woff2
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\b06871f281fee6b241d60582ae9369b9.ttf
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\fee66e712a8a08eef5805a46892932ad.woff
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\76ec2a09aa20e8a01442f48f046c1a57.png
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\912ec66d7572ff821749319396470bde.svg
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\9c74e172f87984c48ddf5c8108cabe67.png
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\build.js
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\index.html
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\styles.css
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\674f50d287a8c48dc19ba404d20fe713.eot
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\af7ae505a9eed503f8b8e6982036873e.woff2
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\b06871f281fee6b241d60582ae9369b9.ttf
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\fee66e712a8a08eef5805a46892932ad.woff
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\dist\backend.js
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\dist\devtools.js
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\index.html
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.deps.json
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.runtimeconfig.json
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.runtimeconfig.dev.json
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.dll
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.pdb
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.Views.dll
+D:\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.Views.pdb
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.csprojAssemblyReference.cache
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.csproj.CoreCompileInputs.cache
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorAssemblyInfo.cache
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorAssemblyInfo.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.AssemblyInfoInputs.cache
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.AssemblyInfo.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.TagHelpers.input.cache
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.TagHelpers.output.cache
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorCoreGenerate.cache
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\LeftNav\Default.g.cshtml.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\TopNav\Default.g.cshtml.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\View.g.cshtml.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorTargetAssemblyInfo.cache
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorTargetAssemblyInfo.cs
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.Views.pdb
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.dll
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.pdb
+D:\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.csproj.CopyComplete
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\810a1b930979de83478be0f458b51dd8.png
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\912ec66d7572ff821749319396470bde.svg
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\9c74e172f87984c48ddf5c8108cabe67.png
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\build.js
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\index.html
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\styles.css
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\674f50d287a8c48dc19ba404d20fe713.eot
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\af7ae505a9eed503f8b8e6982036873e.woff2
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\b06871f281fee6b241d60582ae9369b9.ttf
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\fee66e712a8a08eef5805a46892932ad.woff
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\76ec2a09aa20e8a01442f48f046c1a57.png
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\912ec66d7572ff821749319396470bde.svg
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\9c74e172f87984c48ddf5c8108cabe67.png
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\build.js
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\index.html
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\styles.css
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\674f50d287a8c48dc19ba404d20fe713.eot
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\af7ae505a9eed503f8b8e6982036873e.woff2
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\b06871f281fee6b241d60582ae9369b9.ttf
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\fee66e712a8a08eef5805a46892932ad.woff
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\dist\backend.js
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\dist\devtools.js
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\index.html
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.deps.json
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.runtimeconfig.json
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.runtimeconfig.dev.json
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.dll
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.pdb
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.Views.dll
+D:\outcomes\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.Views.pdb
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.csprojAssemblyReference.cache
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.csproj.CoreCompileInputs.cache
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorAssemblyInfo.cache
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorAssemblyInfo.cs
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.AssemblyInfoInputs.cache
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.AssemblyInfo.cs
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.TagHelpers.input.cache
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.TagHelpers.output.cache
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorCoreGenerate.cache
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\LeftNav\Default.g.cshtml.cs
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\TopNav\Default.g.cshtml.cs
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\View.g.cshtml.cs
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorTargetAssemblyInfo.cache
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorTargetAssemblyInfo.cs
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.Views.pdb
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.dll
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.pdb
+D:\outcomes\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.csproj.CopyComplete
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\810a1b930979de83478be0f458b51dd8.png
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\912ec66d7572ff821749319396470bde.svg
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\9c74e172f87984c48ddf5c8108cabe67.png
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\build.js
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\index.html
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\styles.css
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\674f50d287a8c48dc19ba404d20fe713.eot
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\af7ae505a9eed503f8b8e6982036873e.woff2
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\b06871f281fee6b241d60582ae9369b9.ttf
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\About\fee66e712a8a08eef5805a46892932ad.woff
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\76ec2a09aa20e8a01442f48f046c1a57.png
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\912ec66d7572ff821749319396470bde.svg
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\9c74e172f87984c48ddf5c8108cabe67.png
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\build.js
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\index.html
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\styles.css
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\674f50d287a8c48dc19ba404d20fe713.eot
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\af7ae505a9eed503f8b8e6982036873e.woff2
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\b06871f281fee6b241d60582ae9369b9.ttf
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Toolbar\fee66e712a8a08eef5805a46892932ad.woff
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\dist\backend.js
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\dist\devtools.js
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\DebugTools\Window\index.html
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.deps.json
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.runtimeconfig.json
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.runtimeconfig.dev.json
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.dll
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.pdb
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.Views.dll
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\bin\Debug\netcoreapp2.1\NewProject.Views.pdb
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.csprojAssemblyReference.cache
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.csproj.CoreCompileInputs.cache
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorAssemblyInfo.cache
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorAssemblyInfo.cs
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.AssemblyInfoInputs.cache
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.AssemblyInfo.cs
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.TagHelpers.input.cache
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.TagHelpers.output.cache
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorCoreGenerate.cache
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\LeftNav\Default.g.cshtml.cs
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\TopNav\Default.g.cshtml.cs
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\View.g.cshtml.cs
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorTargetAssemblyInfo.cache
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.RazorTargetAssemblyInfo.cs
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.Views.pdb
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.dll
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.pdb
+C:\Users\果冻\Desktop\新建文件夹 (2)\期末项目\fgdProject\NewProject\obj\Debug\netcoreapp2.1\NewProject.csproj.CopyComplete

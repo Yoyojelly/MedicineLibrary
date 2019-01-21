@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+    
+    class SubPower{
+        constructor(){
+        //权限层级
+        this.powerLevel = null;
+        //权限ID
+        this.subPowerID = null;
+        //权限名称
+        this.subPowerName = null;
+        //所属超权限ID
+        this.supPowerID = null;
+        //权限列表
+        this.powers= [] ;
+        //权限树
+        this.powerTree = [];
+    }
+    //去后台获取power表的所有数据并赋值给this.power
+    //也可以直接获取返回值
+    fetchPower(){
+        fetch("/Users/fetchSubPowers")
+        .then((res)=>{
+          return res.json()
+        }).then((json)=>{
+            this.powers = json;
+        });
+        return this.powers;
+    }
+    //把power解析成一个树，赋值给powerTree
+    //树的结构：[{id,label,?data,children:[...]},{??}]
+    //children在哪个{}内就表示是哪个的子权限
+    //power => [{powerLevel,subPowerID,subPowerName,supPowerID}]
+    //           权限层级    权限ID      权限名称     所属超权限ID
+    parseTree(){
+        //在权限表中，一定先有超权限，再有子权限
+        //所以一遍循环足以把所有的权限全部加入权限树内
+        for(let i = 0 ; i < this.powers.length ; i++)
+        {
+            //如果权限的超权限是0，则直接压入权限树
+            if(this.powers[i].supPowerID == 0){
+                ///-------code--------////
+                this.powerTree.push(this.powers[i]);
+            }
+            //如果权限的超权限不是0，则寻找对应的超权限，在它的超权限内压入child
+            else{
+                this.findChild(this.powerTree,
+                          this.powers[i].supPowerID,
+                          this.powers[i]);
+            }
+        }
+    }
+    //寻找孩子的递归方法,传入一个数组，检测其有没有child
+    //传入需要寻找的id,传入需要添加的对象
+    //如果有，则检查
+    findChild(arr,id,obj){
+        console.log(obj);
+        //如果当前对象不是数组，则直接检查赋值
+        if(!arr instanceof Array){
+            if(arr.subPowerID == id){
+                if(arr.children)
+                {
+                    arr.children.push(obj);
+                    return true;
+                }
+                else
+                {
+                    arr.children = [];
+                    arr.children.push(obj);
+                    return true;
+                }
+            }
+        }
+        else if(arr instanceof Array){
+            for(let i = 0;i<arr.length;i++)
+            {
+                //e=>arr[i]
+                //当前对象的id是否等于需要寻找的id
+                //如果是则赋值然后返回
+                if(arr[i].subPowerID == id){
+                    if(arr[i].children)
+                    {
+                        arr[i].children.push(obj);
+                        return true;
+                    }
+                    else
+                    {
+                        arr[i].children = [];
+                        arr[i].children.push(obj);
+                        return true;
+                    }
+                }
+                //寻找是否有孩子
+                if(arr[i].children){
+                    //如果有孩子则遍历孩子重复以上操作
+                    var result = this.findChild(arr[i].children,id,obj);
+                    if(result) return true;
+                }
+            }
+            
+        }
+    }
+}
+
+        var subpower = new SubPower();
+        var mypower = [
+            {subPowerID:1,subPowerName:"通用名库",supPowerID:0},
+            {subPowerID:2,subPowerName:"通用名库1",supPowerID:0},
+            {subPowerID:3,subPowerName:"通用名库2",supPowerID:0},
+            {subPowerID:4,subPowerName:"通用名库3",supPowerID:1},
+            {subPowerID:5,subPowerName:"通用名库4",supPowerID:1},
+            {subPowerID:6,subPowerName:"通用名库5",supPowerID:2},
+            {subPowerID:7,subPowerName:"通用名库6",supPowerID:3},
+            {subPowerID:8,subPowerName:"通用名库7",supPowerID:4},
+            {subPowerID:9,subPowerName:"通用名库8",supPowerID:7},
+        ];
+        subpower.powers = mypower;
+        subpower.parseTree();
+        console.log(subpower.powerTree);
+    </script>
+</body>
+</html>

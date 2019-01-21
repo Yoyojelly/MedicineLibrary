@@ -1,0 +1,119 @@
+﻿body {
+    /*background: red;*/
+    #index {
+        width: 100%;
+
+        .my-image {
+            background-image: url(/images/shixubu.png);
+            background-color: yellow;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    //通用名库
+    #tymk {
+        margin-top: 20px;
+
+        table {
+            .firsttd {
+                width: 40px;
+            }
+
+            tr {
+                td {
+                    border: 1px dashed black;
+                    /*align-content:center;*/
+                    text-align: center;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+                /*&:hover {
+                    background: yellow;
+                }*/
+                // &:nth-of-type(odd) {
+                //     //奇数行换色
+                //     /*background: #EEF2F9;*/
+                // }
+            }
+        }
+    }
+    /*商品信息*/
+    #spxx {
+        .table1 {
+            tr {
+                td {
+                    text-align: right;
+                }
+            }
+
+            .nonetr {
+                height: 20px;
+            }
+        }
+
+        .table2 {
+            tr {
+                td {
+                    text-align: center;
+                    border: 1px dashed black;
+                }
+            }
+        }
+    }
+    /*添加商品详情*/
+    #tjspxq {
+        //主数据tab
+        #spzsjtab {
+            /*主数据表格*/
+            .zsjtable {
+                tr {
+                    td {
+                        textarea {
+                            width: 600px;
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*所有的表格隔行换色*/
+    /*tr:nth-of-type(odd) {
+        //奇数行换色
+        background: #EEF2F9;
+    }*/
+    /*表格的头部信息*/
+    .table-header {
+        background: rgb(235, 235, 228);
+    }
+
+    .my-index-div {
+        height: 250px;
+        background: white;
+    }
+
+    .selected {
+        background-color: yellow !important;
+    }
+
+    .margin-top-20 {
+        margin-top: 20px; 
+    }
+
+    .my-border {
+        td {
+            border: 1px dashed black;
+        }
+    }
+    .custom-tree-node{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        padding-right: 8px;
+      }
+    }
+

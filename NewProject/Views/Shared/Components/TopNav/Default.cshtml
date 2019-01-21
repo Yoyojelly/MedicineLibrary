@@ -1,0 +1,18 @@
+﻿@*@model AllClass*@
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<nav class="navbar fixed-top top-navbar">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" asp-controller="Home" asp-action="Index">主页</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">menu1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2">menu2</a>
+        </li>
+        <li class="nav-item" v-for="item in navItems"></li>
+    </ul>
+</nav>

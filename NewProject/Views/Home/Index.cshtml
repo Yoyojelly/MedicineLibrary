@@ -1,0 +1,655 @@
+﻿@{
+    ViewData["Title"] = "View";
+}
+
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+<link href="~/css/Index.min.css" rel="stylesheet" />
+<link href="~/css/site.min.css" rel="stylesheet" />
+<link href="~/css/leftNav.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+@*左侧导航栏*@
+<div id="leftNav" class="fixed-top">
+    <left-nav :key.sync="key"></left-nav>
+</div>
+
+@*顶部导航栏*@
+<div id="topnav">
+    <nav class="navbar fixed-top top-navbar">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a id="indextab" class="nav-link active" data-toggle="tab" href="#index">主页</a>
+            </li>
+            <li class="nav-item" v-on:dblclick="()=>dbClickCutTab(nav)" v-for="nav in navs">
+                <a :id="nav.id" class="nav-link" data-toggle="tab" :href="nav.href">{{nav.text}}</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="tab-content">
+    @*主页*@
+    <div class="tab-pane active" id="index">
+        
+        我的工作：
+        <div class="row">
+            <div class="col-4 my-index-div" onclick="tymkClick()">
+                <div>
+                    <div class="my-image te"></div>
+                    <div class="">通用名库</div>
+                </div>
+            </div>
+            <div class="col-4 my-index-div">
+                消息提醒：
+            </div>
+        </div>
+        <div class="col-4 my-index-div">
+            今日开单：
+        </div>
+        我的浏览
+        <div class="col-4 my-index-div">
+            友情链接：
+        </div>
+    </div>
+    @*通用名库*@
+    <div class="tab-pane" id="tymk" v-if="active">
+        <div>
+            <button id="add-new-btn" onclick="addNew()">新增</button>
+            <button onclick="refreshTymk()">刷新</button>
+            <button v-on:click="deleteMedicine()">删除</button>
+        </div>
+        <table class="table-hover">
+            <tr class="table-header">
+                <td class="firsttd" rowspan="2" style="width:20px"></td>
+                <td>标准通用名</td>
+                <td>商品大类</td>
+                <td>商品中类</td>
+                <td>商品小类</td>
+                <td>修改词条</td>
+                <td>商品基本信息</td>
+                <td>操作记录</td>
+            </tr>
+            <tr>
+                <td><input name="medicineName" v-model="medicineName" /></td>
+                <td><input name="tymd" v-model="tymd" /></td>
+                <td><input name="tymz" v-model="tymz" /></td>
+                <td><input name="tymx" v-model="tymx" /></td>
+                <td><input disabled /></td>
+                <td><input disabled /></td>
+                <td><input disabled /></td>
+            </tr>
+            <tr class="tymtr"
+                v-bind:class="{selected : currentTym == tym.medicineID}"
+                v-on:click="tymTrClick(tym.medicineID)"
+                v-for="tym in tymlist"
+                :key="tym.medicineID">
+                <td>{{tymlist.indexOf(tym)+1}}</td>
+                <td>{{tym.medicineName}}</td>
+                <td>{{tym.dname}}</td>
+                <td>{{tym.zname}}</td> 
+                <td>{{tym.xname}}</td>
+                @*修改词条*@
+                <td v-on:click="toXgct(tym.medicineID)">编辑</td>
+                @*商品基本信息*@
+                <td v-on:click="toSpxx(tym.medicineID)">编辑</td>
+                @*操作记录*@
+                <td>编辑</td>
+            </tr>
+        </table>
+    </div>
+    @*用户管理*@
+    <div class="tab-pane" id="yhgl" v-if="active">
+        @*头部按钮*@
+        <div class="margin-top-20">
+            <button v-on:click="addNewYh()">新增</button>
+            <button v-on:click="alterYh()">修改</button>
+            <button v-on:click="deleteYh()">删除</button>
+            <button onclick="fetchUsers()">更新</button>
+        </div>
+        @*用户列表*@
+        <div class="margin-top-20">
+            <table class="text-center my-border table-hover">
+                <tr>
+                    <td rowspan="2"></td>
+                    <td>用户代码</td>
+                    <td>用户名称</td>
+                    <td>是否禁用</td>
+                    <td>组织机构代码</td>
+                    <td>说明</td>
+                </tr>
+                <tr>
+                    <td><input /></td>
+                    <td><input /></td>
+                    <td><input /></td>
+                    <td><input /></td>
+                    <td><input /></td>
+                </tr>
+                <tr class="" v-for="user in users" v-bind:class="{selected : currentUser == user.userID}" v-on:click="userClick(user.userID,user.powerID)">
+                    <td>{{users.indexOf(user)+1}}</td>
+                    <td>{{user.user_code}}</td>
+                    <td>{{user.user_name}}</td>
+                    <td><input type="checkbox" v-model="user.isDisable=='0'?false:true" disabled /></td>
+                    <td>{{user.zzjg_code}}</td>
+                    <td>{{user.user_explain}}</td>
+                </tr>
+            </table>
+        </div>
+        @*权限列表*@
+        <div class="margin-top-20">
+            <table class="text-center my-border table-hover">
+                <tr>
+                    <td rowspan="2"></td>
+                    <td>权限组名称</td>
+                    <td>权限组代码</td>
+                    <td>说明</td>
+                </tr>
+                <tr>
+                    <td><input /></td>
+                    <td><input /></td>
+                    <td><input /></td>
+                </tr>
+                <tr v-for="power in powers">
+                    <td>{{powers.indexOf(power)+1}}</td>
+                    <td>{{power.powerTeamName}}</td>
+                    <td>{{power.powerTeamID}}</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    @*新增用户*@
+    <div id="xzyh" class="tab-pane" v-if="active">
+        <div>
+            <button v-on:click="saveUser()">保存</button>
+            <button v-on:click="refreshUser()">刷新</button>
+            <button v-on:click="resetPwd()">重置密码</button>
+        </div>
+        <table>
+            <tr>
+                <td>用户代码</td>
+                <td><input v-model="user.user_code" /></td>
+            </tr>
+            <tr>
+                <td>用户名称</td>
+                <td><input v-model="user.user_name" /></td>
+            </tr>
+            <tr>
+                <td>组织机构代码</td>
+                <td><input v-model="user.zzjg_code" /></td>
+            </tr>
+            <tr>
+                <td>说明</td>
+                <td><input name="user.user_explain" /></td>
+            </tr>
+            <tr>
+                <td>是否禁用</td>
+                <td><input type="checkbox" v-model="isDisable" /></td>
+            </tr>
+        </table>
+        <user-powers v-on:put-power="func" :current-user="currentUser" ></user-powers>
+    </div>
+    @*权限组管理*@
+    <div class="tab-pane" id="qxzgl" v-if="active">
+        <power-team></power-team>
+    </div>
+    @*新增词条*@
+    <div class="tab-pane" id="xzct" v-if="active">
+        <form id="xzctForm">
+            <div>
+                <button type="button" onclick="saveMedicine()">保存</button>
+                <button type="reset">刷新</button>
+            </div>
+
+            <div class="row">
+                <div class="col-3 float-left">标准通用名：</div>
+                <div class="col-2"><input name="MedicineName" /></div>
+            </div>
+            <div class="row margintop20">
+                <select name="tymd" class="custom-select" onchange="tymdSelected('xzct')">
+                    <option selected>产品类别-大</option>
+                    <option v-for="tymd in tymds" :key="tymd.dlid" :value="tymd.dlid">{{tymd.dname}}</option>
+                </select>
+            </div>
+            <div class="row">
+                <select name="tymz" class="custom-select" onchange="tymxSelected('xzct')">
+                    <option selected>产品类别-中</option>
+                    <option v-for="tymz in tymzs" :value="tymz.zlid">{{tymz.zname}}</option>
+                </select>
+            </div>
+            <div class="row">
+                <select name="tymx" class="custom-select">
+                    <option selected>产品类别-小</option>
+                    <option v-for="tymx in tymxs" :value="tymx.xlid">{{tymx.xname}}</option>
+                </select>
+            </div>
+            <div class="row">
+                <select name="jglb" class="custom-select">
+                    <option selected>监管类别</option>
+                    <option v-for="jglb in jglbs" :value="jglb.jglbID">{{jglb.lbName}}</option>
+                </select>
+            </div>
+            <div class="row">
+                <select name="ywlb" class="custom-select">
+                    <option selected>药物类别</option>
+                    <option v-for="ywlb in ywlbs" :value="ywlb.lbid">{{ywlb.lbname}}</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    @*修改词条*@
+    <div class="tab-pane" id="xgct" v-if="active">
+        <form id="xgctForm">
+            <div>
+                <button type="button" onclick="xgctSave()">保存</button>
+                <button type="reset">刷新</button>
+            </div>
+            <div class="row">
+                <div class="col-3 float-left">标准通用名：</div>
+                <div class="col-2"><input name="medicineName" :value="medicine.medicineName" /></div>
+            </div>
+            <div class="row margintop20">
+                <select name="tymd" class="custom-select" onchange="tymdSelected('xgct')">
+                    <option :value="medicine.dlid" selected>{{medicine.dname}}</option>
+                    <option v-for="tymd in tymds" :key="tymd.dlid" :value="tymd.dlid">{{tymd.dname}}</option>
+                </select>
+            </div>
+            <div class="row">
+                <select name="tymz" class="custom-select" onchange="tymxSelected('xgct')">
+                    <option :value="medicine.zlid" selected>{{medicine.zname}}</option>
+                    <option v-for="tymz in tymzs" :value="tymz.zlid">{{tymz.zname}}</option>
+                </select>
+            </div>
+            <div class="row">
+                <select name="tymx" class="custom-select">
+                    <option :value="medicine.xlid" selected>{{medicine.xname}}</option>
+                    <option v-for="tymx in tymxs" :value="tymx.xlid">{{tymx.xname}}</option>
+                </select>
+            </div>
+            <div class="row">
+                <select name="jglb" class="custom-select">
+                    <option :value="medicine.jglbid" selected>{{medicine.jglbname}}</option>
+                    <option v-for="jglb in jglbs" :value="jglb.jglbID">{{jglb.lbName}}</option>
+                </select>
+            </div>
+            <div class="row">
+                <select name="ywlb" class="custom-select">
+                    <option :value="medicine.lbid" selected>{{medicine.lbname}}</option>
+                    <option v-for="ywlb in ywlbs" :value="ywlb.lbid">{{ywlb.lbname}}</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    @*商品信息*@
+    <div id="spxx" class="tab-pane" v-if="active">
+        <div class="margin-top-20">
+            <button v-on:click="toAddProductTab()">添加</button>
+            <button onclick="refreshSpxx()">刷新</button>
+            <button v-on:click="deleteSp()">删除</button>
+        </div>
+        <div class="margin-top-20">
+            <table class="table1">
+                <tr>
+                    <td>商品名</td>
+                    <td><input v-model="cxmedicineName" /></td>
+                    <td>生产单位</td>
+                    <td><input v-model="cxmedicineFirm" /></td>
+                </tr>
+                <tr class="nonetr"></tr>
+                <tr>
+                    <td>商品通用名</td>
+                    <td><input :placeholder="medicine.medicineName" readonly /></td>
+                    <td>产品类别-大</td>
+                    <td><input :placeholder="medicine.dname" readonly /></td>
+                    <td>产品类别-中</td>
+                    <td><input :placeholder="medicine.zname" readonly /></td>
+                </tr>
+                <tr>
+                    <td>产品类别-小</td>
+                    <td><input :placeholder="medicine.xname" readonly /></td>
+                    <td>监管类别</td>
+                    <td><input :placeholder="medicine.jglbname" readonly /></td>
+                    <td>药物类别</td>
+                    <td><input :placeholder="medicine.lbname" readonly /></td>
+                </tr>
+            </table>
+            <table class="table2">
+                <tr>
+                    <td></td>
+                    <td>商品名</td>
+                    <td>生产单位</td>
+                    <td>信息完整度%</td>
+                    <td>是否为标准信息词条</td>
+                    <td>状态</td>
+                    <td>操作</td>
+                    <td>操作记录</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input /></td>
+                    <td><input /></td>
+                    <td><input /></td>
+                    <td><input /></td>
+                    <td><input /></td>
+                    <td><input /></td>
+                    <td><input /></td>
+                </tr>
+                <tr v-for="sp in sps"
+                    v-bind:class="{selected : currentSp == sp.spbh}"
+                    v-on:click="currentSp = sp.spbh">
+                    <td></td>
+                    <td>{{sp.spm}}</td>
+                    <td>{{sp.scdw}}</td>
+                    <td>未计算</td>
+                    <td>{{sp.spbh == bzct ? '是' : '否'}}</td>
+                    <td>生效</td>
+                    <td v-on:click="alterSpxq(sp.spbh)">编辑</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    @*添加商品详情*@
+    <div id="tjspxq" class="tab-pane" v-if="active">
+        <div class="margin-top-20">
+            <button v-on:click="saveSpxq()">保存</button>
+            <button>刷新</button>
+            <button>确认</button>
+            <table class="text-right margin-top-20">
+                <tr>
+                    <td>药监批准文号</td>
+                    <td><input v-model="SPZSJ.pzwh" /></td>
+                    <td>剂型</td>
+                    <td><input v-model="SPZSJ.jx" /></td>
+                    <td>商品名</td>
+                    <td><input v-model="SPZSJ.spm" /></td>
+                </tr>
+                <tr>
+                    <td>生产单位</td>
+                    <td><input v-model="SPZSJ.scdw" /></td>
+                    <td>信息来源</td>
+                    <td><input v-model="SPZSJ.xxly" /></td>
+                    <td class="text-left" colspan="2">
+                        是否默认为标准信息词条
+                        <input type="checkbox" v-model="isStandard" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>确认状态</td>
+                    <td class="text-left">
+                        <el-switch
+                          v-model="isCheck"
+                          active-color="#13ce66"
+                          inactive-color="#ff4949"
+                          :change.stop="checkState()">
+                        </el-switch>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                @*导航*@
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#spzsjtab">主数据</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" v-on:click="isSPGG=true" data-toggle="tab" href="#spggtab">药品规格</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" v-on:click="isSPSYZ=true" data-toggle="tab" href="#spsyztab">适应症</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" v-on:click="isSPJJZ=true" data-toggle="tab" href="#spjjztab">禁忌症</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" v-on:click="isSPBLFY=true" data-toggle="tab" href="#spblfytab">不良反应</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" v-on:click="isSPYWXHZY=true" data-toggle="tab" href="#spxhzytab">药物相互作用</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" v-on:click="isSPTSRQYY=true" data-toggle="tab" href="#sptsrqyytab">特殊人群用药</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" v-on:click="isYFYL=true" data-toggle="tab" href="#spyfyltab">用法用量</a>
+                    </li>
+                </ul>
+                @*药物信息*@
+                <div class="tab-content">
+                    @*主数据*@
+                    <div id="spzsjtab" class="tab-pane active row">
+                        <table class="zsjtable text-right row">
+                            <tr>
+                                <td>成分</td>
+                                <td><textarea v-model="SPZSJ.ywcf"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>说明书适应症</td>
+                                <td><textarea v-model="SPZSJ.smssyz"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>说明书用法用量</td>
+                                <td><textarea v-model="SPZSJ.smsyfyl"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>说明书禁忌症</td>
+                                <td><textarea v-model="SPZSJ.smsjjz"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>不良反应</td>
+                                <td><textarea v-model="SPZSJ.blfy"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>特殊人群用药</td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                        </table>
+                    </div>
+                    @*药品规格*@
+                    <div id="spggtab" class="tab-pane fade">
+                        <div>
+                            <button>添加</button>|
+                            <button>删除</button>|
+                            <button>上移</button>|
+                            <button>下移</button>
+                        </div>
+                        <div>
+                            <table class="text-center">
+                                <tr>
+                                    <td></td>
+                                    <td>药品规格</td>
+                                    <td>包装数量</td>
+                                    <td>包装单位</td>
+                                    <td>描述规格</td>
+                                    <td>条码</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input v-model="SPGG.ggmc" /></td>
+                                    <td><input v-model="SPGG.bzsl" /></td>
+                                    <td><input v-model="SPGG.bzdw" /></td>
+                                    <td><input /></td>
+                                    <td><input /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    @*适应症*@
+                    <div id="spsyztab" class="tab-pane fade">
+                        <div>
+                            <button>添加</button>|
+                            <button>删除</button>|
+                            <button>上移</button>|
+                            <button>下移</button>
+                        </div>
+                        <div>
+                            <table class="text-center">
+                                <tr>
+                                    <td></td>
+                                    <td>适应症ID</td>
+                                    <td>标准适应症名称</td>
+                                    <td>适应症相关性</td>
+                                    <td>用法用量</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input v-model="SPSYZ.syzbh" /></td>
+                                    <td><input v-model="SPSYZ.syzmc" /></td>
+                                    <td><input /></td>
+                                    <td><input /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    @*禁忌症*@
+                    <div id="spjjztab" class="tab-pane fade">
+                        <div>
+                            <button>添加</button>|
+                            <button>删除</button>|
+                            <button>上移</button>|
+                            <button>下移</button>
+                        </div>
+                        <div>
+                            <table class="text-center">
+                                <tr>
+                                    <td></td>
+                                    <td>禁忌症ID</td>
+                                    <td>禁忌症名称</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input v-model="SPJJZ.jjzbh" /></td>
+                                    <td><input v-model="SPJJZ.jjzmc" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    @*不良反应*@
+                    <div id="spblfytab" class="tab-pane fade">
+                        <div>
+                            <button>添加</button>|
+                            <button>删除</button>|
+                            <button>上移</button>|
+                            <button>下移</button>
+                        </div>
+                        <div>
+                            <table class="text-center">
+                                <tr>
+                                    <td></td>
+                                    <td>不良反应ID</td>
+                                    <td>不良反应名称</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input v-model="SPBLFY.blfybh" /></td>
+                                    <td><input v-model="SPBLFY.blfymc" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    @*药物相互作用*@
+                    <div id="spxhzytab" class="tab-pane fade">
+                        <div>
+                            <button>添加</button>|
+                            <button>删除</button>|
+                            <button>上移</button>|
+                            <button>下移</button>
+                        </div>
+                        <div>
+                            <table class="text-center">
+                                <tr>
+                                    <td></td>
+                                    <td>产品1</td>
+                                    <td>产品2</td>
+                                    <td>作用效果</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input v-model="SPYWXHZY.spbH1" /></td>
+                                    <td><input v-model="SPYWXHZY.spbH2" /></td>
+                                    <td><input v-model="SPYWXHZY.zyxg" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    @*特殊人群用药*@
+                    <div id="sptsrqyytab" class="tab-pane fade">
+                        <div>
+                            <button>添加</button>|
+                            <button>删除</button>|
+                            <button>上移</button>|
+                            <button>下移</button>
+                        </div>
+                        <div>
+                            <table class="text-center">
+                                <tr>
+                                    <td></td>
+                                    <td>人群类型</td>
+                                    <td>用药说明</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input v-model="SPTSRQYY.rqlx" /></td>
+                                    <td><input v-model="SPTSRQYY.yysm" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    @*用法用量*@
+                    <div id="spyfyltab" class="tab-pane fade">
+                        <div>
+                            <button>添加</button>|
+                            <button>删除</button>|
+                            <button>上移</button>|
+                            <button>下移</button>
+                        </div>
+                        <div>
+                            <table class="text-center">
+                                <tr>
+                                    <td></td>
+                                    <td>用法用量、注意事项</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 菜单管理 -->
+    <div id="cdgl" class="tab-pane" v-if="active">
+        <power-tree :allow-add-new-power="true"></power-tree>
+    </div>
+    <!-- 菜单权限管理 -->
+    <div id="qxcd" class="tab-pane" v-if="active">
+        <power-menu></power-menu>
+    </div>
+</div>
+
+<!-- element版修改密码模态框 -->
+<div id="xgpwd">
+    <el-dialog
+        title="修改密码"
+        :visible="dialogVisible"
+        :before-close="hanldeClose">
+        <el-form :model="form">
+          <el-form-item label="原密码">
+            <el-input v-model="form.oldPwd" autocomplete="off"></el-input>
+          </el-form-item>
+          <el-form-item label="新密码">
+            <el-input v-model="form.newPwd" autocomplete="off"></el-input>
+          </el-form-item>
+          <el-form-item label="再次输入新密码">
+            <el-input v-model="form.againNewPwd" autocomplete="off"></el-input>
+          </el-form-item>
+        </el-form>
+        <span slot="footer" class="dialog-footer">
+            <el-button v-on:click="concel">取 消</el-button>
+            <el-button type="primary" v-on:click="submit">确定</el-button>
+        </span>    
+    </el-dialog>
+</div>
+<script src="~/dist/bundle.js"></script>

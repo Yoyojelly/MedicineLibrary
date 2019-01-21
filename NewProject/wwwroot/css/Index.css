@@ -1,0 +1,57 @@
+﻿@charset "UTF-8";
+body {
+  /*background: red;*/
+  /*商品信息*/
+  /*添加商品详情*/
+  /*所有的表格隔行换色*/
+  /*tr:nth-of-type(odd) {
+        //奇数行换色
+        background: #EEF2F9;
+    }*/
+  /*表格的头部信息*/ }
+  body #index {
+    width: 100%; }
+    body #index .my-image {
+      background-image: url(/images/shixubu.png);
+      background-color: yellow;
+      width: 80px;
+      height: 80px; }
+  body #tymk {
+    margin-top: 20px; }
+    body #tymk table .firsttd {
+      width: 40px; }
+    body #tymk table tr {
+      /*&:hover {
+                    background: yellow;
+                }*/ }
+      body #tymk table tr td {
+        border: 1px dashed black;
+        /*align-content:center;*/
+        text-align: center; }
+        body #tymk table tr td input {
+          width: 100%; }
+      body #tymk table tr:nth-of-type(odd) {
+        /*background: #EEF2F9;*/ }
+  body #spxx .table1 tr td {
+    text-align: right; }
+  body #spxx .table1 .nonetr {
+    height: 20px; }
+  body #spxx .table2 tr td {
+    text-align: center;
+    border: 1px dashed black; }
+  body #tjspxq #spzsjtab {
+    /*主数据表格*/ }
+    body #tjspxq #spzsjtab .zsjtable tr td textarea {
+      width: 600px;
+      height: 100px; }
+  body .table-header {
+    background: #ebebe4; }
+  body .my-index-div {
+    height: 250px;
+    background: white; }
+  body .selected {
+    background-color: yellow !important; }
+  body .margin-top-20 {
+    margin-top: 20px; }
+  body .my-border td {
+    border: 1px dashed black; }
